@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d07ecc0a07a204892fc8ea62f38f26, type: 3}
+  m_Name: Wave 0
+  m_EditorClassIdentifier: Assembly-CSharp::WaveConfigSO
+  pathPrefab: {fileID: 7584016579860685770, guid: ea31f4eff54698c4f8916fa5f64f7363, type: 3}
+  enemyMoveSpeed: 5
