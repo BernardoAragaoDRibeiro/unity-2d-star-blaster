@@ -103,6 +103,8 @@ GameObject:
   - component: {fileID: 7373861026942622747}
   - component: {fileID: -7706512011169646405}
   - component: {fileID: 8550996917103848729}
+  - component: {fileID: 6876821074288810168}
+  - component: {fileID: 7067219022051712593}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -202,3 +204,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   health: 50
+--- !u!114 &6876821074288810168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6446198549227336326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860921548e707d4438f6422412b71185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  moveSpeed: 10
+  leftBoundPadding: 1
+  rightBoundPadding: 1
+  upBoundPadding: 7
+  downBoundPadding: 1
+--- !u!114 &7067219022051712593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6446198549227336326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa36738c283f9ac46bf8fdc5d8f9f525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shooter
+  projectilePrefab: {fileID: 5780166204517219546, guid: ba0b87e7f352f5443bc3f9b40acaf116, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 3
+  baseFireRate: 0.2
+  useAI: 0
+  minimumFireRate: 0
+  fireRateVariance: 0
+  isFiring: 0
