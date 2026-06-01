@@ -1095,6 +1095,7 @@ GameObject:
   - component: {fileID: 1686366214}
   - component: {fileID: 1686366213}
   - component: {fileID: 1686366212}
+  - component: {fileID: 1686366216}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1185,6 +1186,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1686366216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686366211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8064b8c9ac7e60c45aa9f85f38f2c8c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIUpdater
+  healthSlider: {fileID: 922273304}
+  playerHealth: {fileID: 1713236718}
+  scoreText: {fileID: 1698892591}
 --- !u!1 &1698892589
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,7 +1213,7 @@ GameObject:
   - component: {fileID: 1698892592}
   - component: {fileID: 1698892591}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1322,6 +1338,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698892589}
   m_CullTransparentMesh: 1
+--- !u!114 &1713236718 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8550996917103848729, guid: eb7e414bf594ae34984f461b32db7c1d, type: 3}
+  m_PrefabInstance: {fileID: 5507450112147299140}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca6fc9d0ff35d2041a692db54a3bca28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
 --- !u!1 &1803662524
 GameObject:
   m_ObjectHideFlags: 0
