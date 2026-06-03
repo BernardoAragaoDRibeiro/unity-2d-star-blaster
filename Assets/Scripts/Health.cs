@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Health : MonoBehaviour
@@ -12,12 +11,14 @@ public class Health : MonoBehaviour
     CameraShake cameraShake;
     AudioManager audioManager;
     ScoreKeeper scoreKeeper;
+    LevelManager levelManager;
 
     private void Start()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
         audioManager = FindFirstObjectByType<AudioManager>();
         scoreKeeper = FindFirstObjectByType<ScoreKeeper>();
+        levelManager = FindFirstObjectByType<LevelManager>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -49,9 +50,13 @@ public class Health : MonoBehaviour
     
     void Die()
     {
-        if (!isPlayer)
+        if (isPlayer)
         {
-            scoreKeeper.ModifyScore(scoreValue);
+            levelManager.LoadGameOver();
+        }
+        else
+        {
+            scoreKeeper.ModifyScore(scoreValue);   
         }
         Destroy(gameObject);
     }
