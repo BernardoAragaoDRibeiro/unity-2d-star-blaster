@@ -1,12 +1,21 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    ScoreKeeper scoreKeeper;
+
+    void Awake()
+    {
+        scoreKeeper = FindFirstObjectByType<ScoreKeeper>();
+    }
+
     public void LoadGame()
     {
         SceneManager.LoadScene("GameScene");
+        scoreKeeper.ResetScore();
     }
     
     public void LoadGameOver()
