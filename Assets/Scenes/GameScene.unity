@@ -337,8 +337,8 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: faac480ee6ef22740b9bcd9d02efec07, type: 2}
   - {fileID: 11400000, guid: 445df03edb1cc404fbaec88877c4e50b, type: 2}
-  - {fileID: 11400000, guid: faac480ee6ef22740b9bcd9d02efec07, type: 2}
-  - {fileID: 11400000, guid: 445df03edb1cc404fbaec88877c4e50b, type: 2}
+  - {fileID: 11400000, guid: c8684907518f70d4d9358da9fbb0bf2a, type: 2}
+  - {fileID: 11400000, guid: 7839421bed4528b4487842a94c284855, type: 2}
   timeBetweenWaves: 2
   isLooping: 1
 --- !u!4 &261032889
